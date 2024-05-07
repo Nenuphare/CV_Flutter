@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+class InfosScreen extends StatelessWidget {
+  const InfosScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Infos +"),
+        backgroundColor: Colors.deepOrange,
       ),
     );
   }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import "screen/device.dart";
+import "screens/device.dart";
 
 void main() {
   runApp(const MainApp());
@@ -12,8 +12,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.teal,
-        scaffoldBackgroundColor: Colors.teal,
+        primarySwatch: Colors.orange,
+        scaffoldBackgroundColor: Colors.orange,
         brightness: Brightness.dark,
       ),
       home: Scaffold(

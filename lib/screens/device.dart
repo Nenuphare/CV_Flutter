@@ -12,14 +12,17 @@ class DeviceScreen extends StatefulWidget {
 
 class _DeviceScreenState extends State<DeviceScreen> {
   int _currentScreen = 0;
-  final List<Widget> _screenList = [];
+  final List<Widget> _screenList = [
+    ProfileScreen(),
+    ExpScreen(),
+    FormationScreen(),
+    SkillsScreen(),
+    InfosScreen(),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("First Flutter App"),
-      ),
       body: _screenList[_currentScreen],
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTabTapped,
@@ -27,26 +30,30 @@ class _DeviceScreenState extends State<DeviceScreen> {
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Accueil',
+            icon: Icon(Icons.person),
+            label: 'Profile',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.list),
-            label: 'Liste',
+            icon: Icon(Icons.business),
+            label: 'Expérience',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.book_online),
-            label: 'Truc',
+            icon: Icon(Icons.school),
+            label: 'Formation',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.location_city),
-            label: 'Bruxelles',
+            icon: Icon(Icons.star),
+            label: 'Compétences',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.info),
+            label: 'Infos+',
           ),
         ],
         selectedItemColor:
-            Colors.blue, // Couleur des icônes et du texte sélectionné
+            Colors.deepOrange, // Couleur des icônes et du texte sélectionné
         unselectedItemColor:
-            Colors.grey, // Couleur des icônes et du texte non sélectionné
+            Colors.white, // Couleur des icônes et du texte non sélectionné
       ),
     );
   }

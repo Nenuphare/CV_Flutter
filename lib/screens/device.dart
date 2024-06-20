@@ -35,15 +35,15 @@ class _DeviceScreenState extends State<DeviceScreen> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.business),
-            label: 'Expérience',
+            label: 'Experiences',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.school),
-            label: 'Formation',
+            label: 'Studies',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.star),
-            label: 'Compétences',
+            label: 'Skills',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
